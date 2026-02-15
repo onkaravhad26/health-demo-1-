@@ -54,11 +54,7 @@ function EmergencyGuide() {
                         onClick={() => setSelectedScenario(scenario)}
                     >
                         <div className="card-image-container">
-                            <img
-                                src={scenario.symptomImage}
-                                alt={`${scenario.title} symptoms`}
-                                className="card-image"
-                            />
+                            <div className="emoji-icon">{scenario.emoji}</div>
                             <div
                                 className="severity-badge"
                                 style={{ background: getSeverityColor(scenario.severity) }}
@@ -97,40 +93,23 @@ function EmergencyGuide() {
                         </div>
 
                         <div className="modal-content">
-                            {/* Symptoms Section */}
                             <div className="modal-section">
                                 <h3>🔍 Symptoms to Recognize</h3>
-                                <div className="content-with-image">
-                                    <div className="symptom-image-container">
-                                        <img
-                                            src={selectedScenario.symptomImage}
-                                            alt={`${selectedScenario.title} symptoms`}
-                                        />
-                                    </div>
-                                    <ul className="symptom-list">
-                                        {selectedScenario.symptoms.map((symptom, index) => (
-                                            <li key={index}>{symptom}</li>
-                                        ))}
-                                    </ul>
-                                </div>
+                                <ul className="symptom-list">
+                                    {selectedScenario.symptoms.map((symptom, index) => (
+                                        <li key={index}>{symptom}</li>
+                                    ))}
+                                </ul>
                             </div>
 
                             {/* First Aid Section */}
                             <div className="modal-section">
                                 <h3>🚑 First Aid Steps</h3>
-                                <div className="content-with-image">
-                                    <div className="firstaid-image-container">
-                                        <img
-                                            src={selectedScenario.firstAidImage}
-                                            alt={`${selectedScenario.title} first aid`}
-                                        />
-                                    </div>
-                                    <ol className="firstaid-steps">
-                                        {selectedScenario.firstAidSteps.map((step, index) => (
-                                            <li key={index}>{step}</li>
-                                        ))}
-                                    </ol>
-                                </div>
+                                <ol className="firstaid-steps">
+                                    {selectedScenario.firstAidSteps.map((step, index) => (
+                                        <li key={index}>{step}</li>
+                                    ))}
+                                </ol>
                             </div>
 
                             {/* Emergency Warning */}
