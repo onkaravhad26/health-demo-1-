@@ -3,7 +3,8 @@ const emergencyData = [
     {
         id: 1,
         title: 'Burns',
-        emoji: '🔥',
+        symptomImage: '/src/assets/symptoms/burn.jpg',
+        firstAidImage: '/src/assets/first aid/burn1.jpg',
         category: 'Injury',
         severity: 'Medium',
         symptoms: [
@@ -23,7 +24,8 @@ const emergencyData = [
     {
         id: 2,
         title: 'Choking',
-        emoji: '😷',
+        symptomImage: '/src/assets/symptoms/choking.jpg',
+        firstAidImage: '/src/assets/first aid/choking.jpg',
         category: 'Breathing Emergency',
         severity: 'Critical',
         symptoms: [
@@ -44,7 +46,8 @@ const emergencyData = [
     {
         id: 3,
         title: 'Severe Bleeding',
-        emoji: '🩸',
+        symptomImage: '/src/assets/symptoms/bleeding.jpg',
+        firstAidImage: '/src/assets/first aid/bleeding.jpg',
         category: 'Injury',
         severity: 'High',
         symptoms: [
@@ -65,7 +68,8 @@ const emergencyData = [
     {
         id: 4,
         title: 'Broken Bones (Fracture)',
-        emoji: '🦴',
+        symptomImage: '/src/assets/symptoms/brokenbones.jpg',
+        firstAidImage: '/src/assets/first aid/brokenbones1.jpg',
         category: 'Injury',
         severity: 'High',
         symptoms: [
@@ -86,7 +90,8 @@ const emergencyData = [
     {
         id: 5,
         title: 'Heart Attack',
-        emoji: '💔',
+        symptomImage: '/src/assets/symptoms/heartattack.jpg',
+        firstAidImage: '/src/assets/first aid/heartattack1.jpg',
         category: 'Cardiac Emergency',
         severity: 'Critical',
         symptoms: [
@@ -107,7 +112,8 @@ const emergencyData = [
     {
         id: 6,
         title: 'Stroke',
-        emoji: '🧠',
+        symptomImage: '/src/assets/symptoms/stroke.jpg',
+        firstAidImage: '/src/assets/first aid/stroke1.jpg',
         category: 'Neurological Emergency',
         severity: 'Critical',
         symptoms: [
@@ -128,7 +134,8 @@ const emergencyData = [
     {
         id: 7,
         title: 'Seizure',
-        emoji: '⚡',
+        symptomImage: '/src/assets/symptoms/seizure.jpg',
+        firstAidImage: '/src/assets/first aid/seizure1.jpg',
         category: 'Neurological Emergency',
         severity: 'High',
         symptoms: [
@@ -149,7 +156,8 @@ const emergencyData = [
     {
         id: 8,
         title: 'Allergic Reaction',
-        emoji: '🤧',
+        symptomImage: '/src/assets/symptoms/allergic.jpg',
+        firstAidImage: '/src/assets/first aid/allergic.jpg',
         category: 'Allergic Emergency',
         severity: 'High',
         symptoms: [
@@ -170,7 +178,8 @@ const emergencyData = [
     {
         id: 9,
         title: 'Abdominal Pain',
-        emoji: '🤕',
+        symptomImage: '/src/assets/symptoms/abdominal.jpg',
+        firstAidImage: '/src/assets/first aid/abdominal1.jpg',
         category: 'Medical Emergency',
         severity: 'Medium',
         symptoms: [
